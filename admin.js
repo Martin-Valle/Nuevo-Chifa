@@ -158,7 +158,7 @@ async function loadInvoices() {
     tr.innerHTML = `
       <td>
         <a 
-          href="../views/factura.html?id=${f.id}"
+          href="factura.html?id=${f.id}"
           target="_blank"
           rel="noopener noreferrer"
         >
