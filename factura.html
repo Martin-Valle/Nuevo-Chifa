@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Factura Electrónica</title>
+  <link rel="stylesheet" href="factura.css">
+</head>
+<body>
+  <div class="factura-container">
+    <h2 class="titulo-factura">FACTURA ELECTRÓNICA</h2>
+    <h3 class="empresa">EL DRAGÓN DORADO</h3>
+
+    <div class="info-empresa">
+      <p><strong>RUC:</strong> 0999999999001</p>
+      <p><strong>Dirección:</strong> Av. China y Dragón, Quito - Ecuador</p>
+      <p><strong>Teléfono:</strong> 0958737330</p>
+      <p><strong>Correo:</strong> chifadorado@hotmail.com</p>
+      <p><strong>Factura No:</strong> <span id="factura-id"></span></p>
+    </div>
+
+    <div class="info-cliente">
+      <p><strong>Nombre del cliente:</strong> <span id="cliente-nombre"></span></p>
+      <p><strong>Teléfono:</strong> <span id="cliente-telefono"></span></p>
+      <p><strong>Correo electrónico:</strong> <span id="cliente-correo"></span></p>
+      <p><strong>Fecha de emisión:</strong> <span id="factura-fecha"></span></p>
+    </div>
+
+    <table class="tabla-productos">
+      <thead>
+        <tr>
+          <th>Cant.</th>
+          <th>Descripción</th>
+          <th>Precio Unit.</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="detalle-tabla"></tbody>
+    </table>
+
+    <div class="totales">
+      <p><strong>Subtotal:</strong> $<span id="subtotal"></span></p>
+      <p><strong>IVA 15%:</strong> $<span id="iva"></span></p>
+      <p><strong>Total:</strong> $<span id="total"></span></p>
+    </div>
+
+    <div class="boton-imprimir">
+    <button onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+    </div>
+
+  </div>
+
+  <script type="module" src="factura.js"></script>
+</body>
+</html>
