@@ -1,0 +1,15 @@
+{
+  "name": "chifa",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Proyecto El Dragón Dorado",
+  "main": "index.js",
+  "scripts": {
+    "create-admin": "node create-admin.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
