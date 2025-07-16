@@ -295,6 +295,10 @@ async function loadInvoices() {
     modalInvoice.classList.remove('hidden')
   }
   btnCloseInv.onclick = () => modalInvoice.classList.add('hidden')
+  window.openInvoice = invId => {
+    // Abrimos factura.html pasándole el ID por query string
+    window.open(`factura.html?id=${invId}`, '_blank');
+  };
 
   // — Arranque —
   init()
